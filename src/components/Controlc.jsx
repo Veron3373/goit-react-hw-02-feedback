@@ -1,14 +1,16 @@
 import React from "react";
+import css from './Controlc.module.css'
+
 
 const Control = ({ onGood, onNeutral, onBad }) => (
-  <div>
-    <button tupe='button' onClick={onGood}>
+  <div className={css.sectionButton}>
+    <button className={css.buttonOnClick} tupe='button' onClick={onGood}>
       Good
     </button>
-    <button tupe='button' onClick={onNeutral}>
+    <button className={css.buttonOnClick}  tupe='button' onClick={onNeutral}>
       Neutral
     </button>
-    <button tupe='button' onClick={onBad}>
+    <button className={css.buttonOnClick} tupe='button' onClick={onBad}>
       onBad
     </button>
   </div>
@@ -16,4 +18,4 @@ const Control = ({ onGood, onNeutral, onBad }) => (
 
 export default Control
 
-  
+

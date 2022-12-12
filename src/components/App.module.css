@@ -1,0 +1,6 @@
+.sectionData {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: rgb(0, 128, 79);
+}

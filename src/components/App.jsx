@@ -1,3 +1,4 @@
+import css from './App.module.css'
 import React, { Component } from "react";
 import Control from "./Controlc"
 import { Good, Neutral, Bad, Total, PositiveFeedback } from './Value'
@@ -42,21 +43,21 @@ class Counter extends Component {
 
   render() {
     return (
-      <div>
+      <div className={css.section}>
         <Control
           onGood={this.onGood}
           onNeutral={this.onNeutral}
           onBad={this.onBad}
         />
-      
-          <div>
-            <Good good={this.state.good} />
-            <Neutral neutral={this.state.neutral} />
-            <Bad bad={this.state.bad} />
-            <Total total={this.state.total} />
-            <PositiveFeedback feedbac={this.state.feedbac} />
-          </div>
-  
+
+        <div className={css.sectionData}>
+          <Good good={this.state.good} />
+          <Neutral neutral={this.state.neutral} />
+          <Bad bad={this.state.bad} />
+          <Total total={this.state.total} />
+          <PositiveFeedback feedbac={this.state.feedbac} />
+        </div>
+
       </div>
     )
   }
