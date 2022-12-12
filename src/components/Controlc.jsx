@@ -11,7 +11,7 @@ const Control = ({ onGood, onNeutral, onBad }) => (
       Neutral
     </button>
     <button className={css.buttonOnClick} tupe='button' onClick={onBad}>
-      onBad
+      Bad
     </button>
   </div>
 )

@@ -1,4 +1,12 @@
 .buttonOnClick {
-  gap: 10px;
-  margin-bottom: 50px;
+  margin: 50% 0 50%;
+}
+
+.buttonOnClick:not(:last-child) {
+  margin-right: 10px;
+}
+
+.buttonOnClick:hover {
+  background-color: green;
+  color: red;
 }
